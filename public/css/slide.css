@@ -97,6 +97,11 @@
 	-moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);	
 }
+.bg-primary {
+  background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapersflood.com%2Fdownload%2Fjustice-league-2017-poster-fan-art-2560x1080%2F&psig=AOvVaw26ousbD4BeWBeRDRvXqQ5L&ust=1605211850950000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLiL_6Om--wCFQAAAAAdAAAAABAD);
+  background-size: cover;
+  background-position: center;
+}
 
 @-webkit-keyframes fade {
   from {opacity: .4}

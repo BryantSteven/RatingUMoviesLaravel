@@ -24,7 +24,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-9 mx-auto">
-          <h1 class="mb-5" style="color: black;">Busca las películas en las que estés interesado.</h1>
+          <h1 class="mb-5" style="color: white;">Busca las películas en las que estés interesado.</h1>
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           <form>
@@ -37,4 +37,63 @@
       </div>
     </div>
   </header>
+
+  <div class="container-fluid" style= "padding: 0px">
+    <div style="background-image: url('https://wallpapersflood.com/wp-content/uploads/justice_league_2017_poster_fan_art-2560x1080.jpg');
+  background-size: cover;   height: calc((100vw / 1143) * 482); ">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="mb-5" style="color: white;">Trailer Del Mes</h1>
+            <div id="player" style="margin: auto;"></div>
+            <script>
+              // 2. Carga el IFrame Player API De forma asyncronica.
+              var tag = document.createElement('script');
+
+              tag.src = "https://www.youtube.com/iframe_api";
+              var firstScriptTag = document.getElementsByTagName('script')[0];
+              firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+
+              var player;
+
+              function onYouTubeIframeAPIReady() {
+                player = new YT.Player('player', {
+                  height: '390',
+                  width: '640',
+                  videoId: 'bxG9VN9RrVs',
+                  events: {
+                    'onReady': onPlayerReady,
+                    'onStateChange': onPlayerStateChange
+                  }
+                });
+              }
+
+              // 4. The API will call this function when the video player is ready.
+              function onPlayerReady(event) {
+                //event.target.playVideo();
+              }
+
+              // 5. The API calls this function when the player's state changes.
+              //    The function indicates that when playing a video (state=1),
+              //    the player should play for six seconds and then stop.
+              var done = false;
+
+              function onPlayerStateChange(event) {
+                if (event.data == YT.PlayerState.PLAYING && !done) {
+                  setTimeout(stopVideo, 6000);
+                  done = true;
+                }
+              }
+
+              function stopVideo() {
+                player.stopVideo();
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </x-app-layout>
