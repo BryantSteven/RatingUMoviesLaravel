@@ -44,7 +44,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h1 class="mb-5" style="color: white;">Trailer Del Mes</h1>
+            <h1 class="mb-5" style="color: white; text-aling:center;">Trailer Del Mes</h1>
             <div id="player" style="margin: auto;"></div>
             <script>
               // 2. Carga el IFrame Player API De forma asyncronica.
