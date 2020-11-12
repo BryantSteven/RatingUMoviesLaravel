@@ -11,7 +11,7 @@
                 <a href="{{ route('movies.show', $show->id) }}">
                     <h2>{{ $show->name }}</h2>
                 </a>
-                <img src="{{ $show->image->original }}" alt="{{ $show->name }}">
+                <img src="{{ $show->image->original }}" alt="{{ $show->name }}" width="209" height="279">
                 <p>{!! $show->summary !!}</p>
             </div>
             @endforeach
