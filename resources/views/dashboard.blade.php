@@ -30,7 +30,8 @@
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg" type="text" placeholder="Buscar películas, series y mas..."></div>
-              <div class="col-12 col-md-3"><button class="btn btn-primary btn-block btn-lg" type="submit">Buscar!</button></div>
+              <div class="col-12 col-md-3"><button class="btn btn-primary btn-block btn-lg" ><a href="movies"> Buscar!</a></button></div>
+              
             </div>
           </form>
         </div>
@@ -44,7 +45,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h1 class="mb-5" style="color: white; text-aling:center;">Trailer Del Mes</h1>
+            <h1 class="mb-5" style="color: white; text-align:center;">Trailer del mes</h1>
             <div id="player" style="margin: auto;"></div>
             <script>
               // 2. Carga el IFrame Player API De forma asyncronica.

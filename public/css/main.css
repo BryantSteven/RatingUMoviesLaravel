@@ -59,12 +59,13 @@ body{
     font-size: 50px;
     margin-bottom: 0;
     font-family: 'Lobster', cursive;
+   
 }
 
 .header-content p {
     font-size: 1.5rem;
     display: block;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
 }
 
 .btn {
@@ -73,5 +74,6 @@ body{
     font-size: 1.2rem;
     padding: 1rem 2rem;
     text-decoration: none;
-    border-radius: 15rem;
+    border-radius: 10rem;
+    
 }
