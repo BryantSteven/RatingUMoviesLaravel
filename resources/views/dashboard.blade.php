@@ -27,11 +27,13 @@
           <h1 class="mb-5" style="color: white;">Busca las películas en las que estés interesado.</h1>
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <form>
+          <form method="GET" action="movies">
             <div class="form-row">
-              <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg" type="text" placeholder="Buscar películas, series y mas..."></div>
-              <div class="col-12 col-md-3"><button class="btn btn-primary btn-block btn-lg" ><a href="movies"> Buscar!</a></button></div>
-              
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input class="form-control form-control-lg" type="text" autocomplete="off" name="q" placeholder="Buscar películas, series y mas..."></div>
+              <div class="col-12 col-md-3">
+                <input type="submit" class="btn btn-primary btn-block btn-lg" value="Buscar!">
+              </div>
             </div>
           </form>
         </div>
@@ -39,7 +41,7 @@
     </div>
   </header>
 
-  <div class="container-fluid" style= "padding: 0px">
+  <div class="container-fluid" style="padding: 0px">
     <div style="background-image: url('https://wallpapersflood.com/wp-content/uploads/justice_league_2017_poster_fan_art-2560x1080.jpg');
     background-size: cover;   height: calc((100vw / 1143) * 482); ">
       <div class="container">
@@ -98,51 +100,51 @@
     </div>
   </div>
   <section class="text-center">
-  
+
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item  active">
-                <img class=""  src="img\poster\harleyqueen.jpg"  alt="First slide" style="display:inline-block;" width="159" height="229">
-                <img class=""  src="img\poster\black-panther-web.jpg"  alt="Second slide" style="display:inline-block;" width="159" height="229"> 
-                <img class=""  src="img\poster\bladerunner.jpg" alt="Second slide" width="159" height="229"style="display:inline-block;"> 
-                <img class=""  src="img\poster\captain_marvel.jpg" alt="Second slide" width="159" height="229" style="display:inline-block;"> 
-                <img class=""  src="img\poster\Cursed.jpg" alt="Second slide" width="159" height="229" style="display:inline-block;">
-                <img class=""  src="img\poster\joker.jpg" alt="Second slide" width="159" height="229" style="display:inline-block;">
-                <img class=""  src="img\poster\star.jpg" alt="Second slide" width="159" height="229" style="display:inline-block;">
-            
-              </div>
-              <div class="carousel-item">
-                <img class="" src="img\poster\it.jpg" alt="Second slide" style="display: inline-block;"  width="159" height="229">
-                <img class="" src="img\anita.jpg" alt="Second slide" style="display: inline-block;"  width="159" height="229">
-                <img class="" src="img\poster\poster-vengadores-endgame.jpg" alt="Second slide" style="display: inline-block;"  width="159" height="229">
-                <img class="" src="img\poster\dunkerke.jpg" alt="Second slide" style="display: inline-block;"  width="159" height="229">
-                <img class="" src="img\poster\Malditos_Bastardos_portada.jpg" alt="Second slide" style="display: inline-block;"  width="159" height="229">
-                <img class="" src="img\Movie3.jpg" alt="Second slide" style="display: inline-block;"  width="159" height="229">
-                
-              </div>
-            
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item  active">
+          <img class="" src="img\poster\harleyqueen.jpg" alt="First slide" style="display:inline-block;" width="159" height="229">
+          <img class="" src="img\poster\black-panther-web.jpg" alt="Second slide" style="display:inline-block;" width="159" height="229">
+          <img class="" src="img\poster\bladerunner.jpg" alt="Second slide" width="159" height="229" style="display:inline-block;">
+          <img class="" src="img\poster\captain_marvel.jpg" alt="Second slide" width="159" height="229" style="display:inline-block;">
+          <img class="" src="img\poster\Cursed.jpg" alt="Second slide" width="159" height="229" style="display:inline-block;">
+          <img class="" src="img\poster\joker.jpg" alt="Second slide" width="159" height="229" style="display:inline-block;">
+          <img class="" src="img\poster\star.jpg" alt="Second slide" width="159" height="229" style="display:inline-block;">
+
+        </div>
+        <div class="carousel-item">
+          <img class="" src="img\poster\it.jpg" alt="Second slide" style="display: inline-block;" width="159" height="229">
+          <img class="" src="img\anita.jpg" alt="Second slide" style="display: inline-block;" width="159" height="229">
+          <img class="" src="img\poster\poster-vengadores-endgame.jpg" alt="Second slide" style="display: inline-block;" width="159" height="229">
+          <img class="" src="img\poster\dunkerke.jpg" alt="Second slide" style="display: inline-block;" width="159" height="229">
+          <img class="" src="img\poster\Malditos_Bastardos_portada.jpg" alt="Second slide" style="display: inline-block;" width="159" height="229">
+          <img class="" src="img\Movie3.jpg" alt="Second slide" style="display: inline-block;" width="159" height="229">
+
+        </div>
+
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-          <div style="margin-top: 30px;">
-            <label for="" id="Label1"></label>
-          </div>
-          
-    </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <div style="margin-top: 30px;">
+      <label for="" id="Label1"></label>
+    </div>
+
+  </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
 </x-app-layout>

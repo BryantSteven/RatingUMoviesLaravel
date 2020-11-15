@@ -1,0 +1,10 @@
+.grid-fluid {
+    display: grid;
+    margin: auto;
+}
+
+.loader {
+    display: block;
+    margin: auto;
+
+}
