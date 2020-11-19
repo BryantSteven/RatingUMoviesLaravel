@@ -1,6 +1,6 @@
 <x-guest-layout>
     <!-- Apartado Movie Detail -->
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <div class="col">
                 <a href="{{ route('movies.show', $show->id) }}">
@@ -10,7 +10,7 @@
                 <p>rating: {{ $show->rating->average }}</p>
                 <p>{!! $show->summary !!}</p>
             </div>
-        </div>
+        </div> -->
 
         <!-- Empieza apartado de reseñas -->
         <html>
@@ -60,7 +60,7 @@
     
       <div class="column1">
         <span class="tag">{!! $show->language !!}</span>
-        <span class="tag">fantasy</span>
+        <span class="tag">Estreno: {!! $show->premiered !!}</span>
         <span class="tag">adventure</span>
       </div> <!-- end column1 -->
       
@@ -95,8 +95,6 @@
         </div>
   </div> <!-- end container -->
 </div> <!-- end movie-card -->
-
-    
     </body>
 </html>
 </x-guest-layout>
