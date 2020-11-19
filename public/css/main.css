@@ -77,3 +77,14 @@ body{
     border-radius: 10rem;
     
 }
+.card-hotel{
+    flex: 1 150 px;
+    margin-top: 10px;
+    
+}
+.margin_top{
+    margin-top: 15px;
+}
+.margin_right{
+    margin-right: 30px;
+}
