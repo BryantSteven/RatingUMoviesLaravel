@@ -54,7 +54,6 @@
 }
 p {
 	max-width: 250ch;
-	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }

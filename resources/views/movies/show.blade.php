@@ -70,7 +70,7 @@
 
         <Form method="POST" action="{{ route('reviews.store') }}">
           @csrf
-          <input type="text" placeholder="Que te pareció?..." class="form-control" name="content" autocomplete="off" style="margin-top: 10px;">
+          <input type="text" placeholder="Que te pareció?... ¡ Escribe tu reseña de maximo 240 caracteres !" class="form-control" maxlength="240" name="content" autocomplete="off" style="margin-top: 10px;">
           <input type="hidden" value="{{$show->id}}" name="movie_id">
           <!-- <input type="Submit" value="Carga mi reseña!"> -->
           <button type="Submit" class="btn btn-primary" style="margin-top:10px">¡Carga mis reseña!</button>
