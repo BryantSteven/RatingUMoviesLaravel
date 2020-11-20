@@ -70,7 +70,7 @@
   </div>
   
  </x-app-layout>
- <div class="container">
+ <!-- <div class="container">
   <div class="cellphone-container">    
       <div class="movie">       
         <div class="menu"><i class="material-icons"></i></div>
@@ -124,4 +124,4 @@
 </div>
 <a href="https://dribbble.com/geehm" target="_blank">
   <img class="dribbble-link" src="https://image.flaticon.com/icons/png/512/124/124037.png">
-</a>
+</a> -->
