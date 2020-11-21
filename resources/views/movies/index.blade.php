@@ -83,7 +83,11 @@
       <div class="movie">       
         <div class="menu"></div>
           <div class="">
+          @if(!is_null($show->show->image))
               <img class="movie-img" style="background-image: url({{ $show->show->image->original }})">
+              @else
+          <img src="https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg" class="img-fluid img-thumbnail">
+          @endif
           </div>
           <div class="text-movie-cont">
             <div class="mr-grid">
