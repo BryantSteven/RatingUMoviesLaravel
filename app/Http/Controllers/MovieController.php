@@ -71,7 +71,7 @@ class MovieController extends BaseController
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the  resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
