@@ -15,15 +15,16 @@
 }
  .movie-card {
 	 font: 14px/22px "Lato", Arial, sans-serif;
-	 color: #a9a8a3;
+	 color: #ee0101;
 	 padding: 40px 0;
+	 background-color: #000;
 	 
 }
  .container {
 	 margin: 0 auto;
 	 width: 780px;
 	 height: 800px;
-	 background: #f0f0ed;
+	 background: #dd3d3d;
 	 border-radius: 5px;
 	 position: relative;
 }
@@ -53,7 +54,6 @@
 }
 p {
 	max-width: 250ch;
-	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
@@ -119,6 +119,7 @@ p {
 	 margin-right: 4px;
 	 line-height: 35px;
 	 cursor: pointer;
+	 color: #000;
 }
  .tag:hover {
 	 background: #ddd;
@@ -225,4 +226,5 @@ p {
 	 left: 20px;
 	 margin-bottom: 4px;
 }
+
  
