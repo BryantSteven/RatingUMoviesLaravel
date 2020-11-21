@@ -18,7 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/text', function () {
+Route::get('test', function () {
     return 'Test';
 });
 
@@ -30,3 +30,11 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::resource('movies', 'App\Http\Controllers\MovieController', [
     'middleware'=> ['auth:sanctum', 'verified']
 ]);
+
+Route::resource('reviews', 'App\Http\Controllers\ReviewController', [
+    'middleware'=> ['auth:sanctum', 'verified']
+]);
+
+Route::get('prueba', function(){
+    return 'prueba';
+} );

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 use GuzzleHttp\Client;
+use App\Models\Review;
 
 class MovieController extends BaseController
 {
@@ -13,9 +14,12 @@ class MovieController extends BaseController
      *
      * @return \Illuminate\Http\Response 
      */
-    public function index(Client $client)
+    public function index(Client $client, Request $request)
     {
-        $response = $client->request('GET', 'shows');
+        
+        $response = $client->request('GET', 'search/shows?q=' . $request->query('q'));
+        // dd(json_decode($response->getBody()));
+
         return view('movies/index', ['shows' => json_decode($response->getBody())]);  
     }
 
@@ -49,7 +53,10 @@ class MovieController extends BaseController
     public function show($id, Client $client)
     {
         $response = $client->request('GET', "shows/$id");
-        return view('movies/show', ['show' => json_decode($response->getBody())]);
+        return view('movies/show', [
+            'show' => json_decode($response->getBody()),
+            'reviews' => Review::where('movie_id', $id)->get()
+            ]);
     }
 
     /**
@@ -64,7 +71,7 @@ class MovieController extends BaseController
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the  resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
